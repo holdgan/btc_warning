@@ -24,7 +24,7 @@ $ok_btc=$ok_json['ticker']['buy'];
 $yb_btc=$yb_json['price'];
 
 $cha=$ok_btc-$yb_btc;
-$email='your email';
+$email='your collect email';
 $content='ok_btc - yb_btc = '.$cha;
 $label='okcoin:'.$ok_btc.'   yuanbao:'.$yb_btc;
 
@@ -117,7 +117,7 @@ if(time()-$lasttime>=600||$type==2){
 			$mail->Port = 25;
 			$mail->Host = "smtp.163.com";
 			$mail->From = "your send email";
-			$mail->Username = "your email user";
+			$mail->Username = "your email username";
 			$mail->Password = "your email password";
 			$mail->FromName = $pLabel;
 			$mail->IsHTML(true);
